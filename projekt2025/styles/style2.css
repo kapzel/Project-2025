@@ -1,85 +1,30 @@
-/*ustawienie i ostylowanie zawartośći navigacji*/
-.site-nav {
-    height: 20px;
-    width: 0;
-    background-color: black;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 10px;
-    box-sizing: border-box;
-    float: right;
-
+.nav-menu {
+    background-color: #333;
+    padding: 1em;
+    text-align: center;
 }
 
-/*menu button*/
-.site-nav-trigger {
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-size: 18px;
-    padding: 10px;
-    border: 0;
-    border-radius: 5px;
-    background-color: darkblue;
-    color: white;
-    float: right;
-
-}
-
-/*ostylowanie całej navigacj*/
-.site-menu {
-    display: flex;
-    box-sizing: border-box;
-    position: absolute;
-    top: 50px;
-    right: 0;
-    height: 125px;
-    width: 300px;
-    background-color: black;
-    transform: translateX(100%);
-    transition: 0.3s transform ease-in-out;
-}
-
-.site-menu ul {
+.nav-menu ul {
+    list-style: none;
+    margin: 0;
     padding: 0;
-    list-style-type: none;
-    margin: 0 10px;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
 }
 
-.site-menu li {
-    background-color: #ffffff;
-    margin-top: 20px;
-    color: #696e9e;
-    border-radius: 5px;
-    flex-basis: 100%;
-    display: flex;
-    height: 30px;
+.nav-menu li {
+    display: inline-block;
+    margin-right: 20px;
 }
 
-/*ostylowanie linkow*/
-.site-menu a {
-    display: flex;
-    padding: 10px;
-    box-sizing: border-box;
+.nav-menu a {
+    color: #fff;
     text-decoration: none;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    border-radius: 5px;
+    transition: color 0.2s ease;
 }
 
-/*zawartość navigacji gdy najechana*/
-.site-menu a:hover {
-    background-color: darkblue;
-    color: white;
+.nav-menu a:hover {
+    color: #ccc;
 }
 
-/*mechanika przycisku navigacji*/
-.site-nav-trigger:focus~.site-menu,
-.site-menu:hover {
-    transform: translateX(0);
+.nav-menu a.active {
+    color: #66d9ef;
 }
