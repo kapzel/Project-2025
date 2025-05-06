@@ -47,3 +47,7 @@
 .nav-menu a.active {
     color: #66d9ef;
 }
+
+#demo {
+    text-align: center;
+}
