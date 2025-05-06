@@ -8,11 +8,12 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 .nav-menu li {
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 100px;
 }
 
 .nav-menu a {
@@ -25,6 +26,6 @@
     color: #ccc;
 }
 
-.nav-menu a.active {
-    color: #66d9ef;
+.nav-menu a.actived {
+    color: purple;
 }
