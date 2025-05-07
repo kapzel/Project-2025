@@ -99,6 +99,6 @@ const storeGames = [
 
 
 ];
-document.getElementById("GameTabel").innerHTML = storeGames;
+const tableElement = document.getElementById("GameTable");
 
-document.getElementById("demo").innerHTML = "hello world";
+tableElement.innerHTML = storeGames;
