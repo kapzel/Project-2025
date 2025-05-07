@@ -1,3 +1,4 @@
+/*basic style settings*/
 * {
     margin: 0;
     padding: 0;
@@ -47,5 +48,30 @@
 }
 
 .nav-menu a.active {
+    color: #66d9ef;
+}
+
+/*inbody stylings*/
+body {
+    background-color: black;
+}
+
+h3 {
+    color: #fff;
+}
+
+/*buttons*/
+
+.buttons {
+    float: left;
+}
+
+.buttons button {
+    background-color: #333;
+    color: #fff;
+
+}
+
+.buttons button:hover {
     color: #66d9ef;
 }
