@@ -100,3 +100,5 @@ const storeGames = [
 
 ];
 document.getElementById("GameTabel").innerHTML = storeGames;
+
+document.getElementById("demo").innerHTML = "hello world";
