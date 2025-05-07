@@ -1,0 +1,81 @@
+/*basic style settings*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#logo {
+    float: left;
+    width: 80px;
+    height: 60px;
+    position: relative;
+}
+
+#titleHeader {
+    color: #fff;
+
+    float: left;
+}
+
+/* Nav styles */
+
+.nav-menu {
+    background-color: #333;
+    padding: 1em;
+    text-align: center;
+}
+
+.nav-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.nav-menu li {
+    display: inline-block;
+    margin-right: 100px;
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.nav-menu a:hover {
+    color: #ccc;
+}
+
+.nav-menu a.active {
+    color: #66d9ef;
+}
+
+/*inbody stylings*/
+body {
+    background-color: black;
+}
+
+h3 {
+    color: #fff;
+}
+
+#gameTable {
+    color: #fff;
+}
+
+/*buttons*/
+
+.buttons {
+    float: left;
+}
+
+.buttons button {
+    background-color: #333;
+    color: #fff;
+
+}
+
+.buttons button:hover {
+    color: #66d9ef;
+}
