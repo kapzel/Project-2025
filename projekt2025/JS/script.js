@@ -84,6 +84,6 @@ const storeGames = [
     rating: "10/10",
   },
 ];
-const tableElement = document.getElementById("GameTable");
+const tableElement = document.getElementById("gameTable");
 
 tableElement.innerHTML = storeGames;
