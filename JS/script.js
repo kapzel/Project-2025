@@ -87,3 +87,4 @@ const storeGames = [
 const tableElement = document.getElementById("gameTable");
 
 tableElement.innerHTML = storeGames;
+
