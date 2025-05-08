@@ -70,20 +70,21 @@ const storeGames = [
     rating: "9/10",
   },
   {
-    id: 110,
+    id: 111,
     name: "Euro Truck Sim.2",
     price: 70,
     releaseDate: "2012",
     rating: "9,8/10",
   },
   {
-    id: 110,
+    id: 112,
     name: "Undertale",
     price: 47,
     releaseDate: "2015",
     rating: "10/10",
   },
 ];
-const tableElement = document.getElementById("GameTable");
+const tableElement = document.getElementById("gameTable");
 
 tableElement.innerHTML = storeGames;
+
