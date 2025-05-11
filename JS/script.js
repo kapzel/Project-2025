@@ -118,6 +118,7 @@ tableElement.appendChild(tableBody);
 // functions for sorting
 
 function sortByName() {
+  storeGames.sort()
 
 };
 function sortByDate() {
