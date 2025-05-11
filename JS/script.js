@@ -1,3 +1,4 @@
+//making games object
 const storeGames = [
   {
     id: 101,
@@ -84,7 +85,7 @@ const storeGames = [
     rating: 10,
   },
 ];
-
+// viewing object on html page
 const tableElement = document.getElementById("gameTable");
 
 const tableBody = document.createElement("tbody");
@@ -114,5 +115,19 @@ storeGames.forEach((game) => {
 });
 
 tableElement.appendChild(tableBody);
+// functions for sorting
 
+function sortByName() {
+  storeGames.sort()
+
+};
+function sortByDate() {
+
+};
+function sortByPrice() {
+
+};
+function sortByRating() {
+
+};
 

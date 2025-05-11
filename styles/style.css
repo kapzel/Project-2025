@@ -82,7 +82,7 @@ h3 {
     color: #66d9ef;
 }
 
-/*table element and */
+/*table element*/
 
 #gameTable {
     margin: 0 auto;
@@ -108,8 +108,8 @@ h3 {
     padding: 10px;
 }
 
-/*atributes*/
-#gameAtributes {
+/*Game headers*/
+#gameHeaders {
     color: #fff;
     text-align: center;
     position: absolute;
