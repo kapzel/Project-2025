@@ -23,6 +23,8 @@
     background-color: #333;
     padding: 1em;
     text-align: center;
+    position: sticky;
+    overflow: hidden;
 }
 
 .nav-menu ul {
