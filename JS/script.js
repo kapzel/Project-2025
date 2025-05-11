@@ -84,6 +84,35 @@ const storeGames = [
     rating: 10,
   },
 ];
-const tableElement = document.getElementById("gameTable").innerHTML = storeGames.id + "," + storeGames.name + "," + storeGames.price + "," + storeGames.releaseDate + "," + storeGames.rating;
+
+const tableElement = document.getElementById("gameTable");
+
+const tableBody = document.createElement("tbody");
+
+storeGames.forEach((game) => {
+
+  const tableRow = document.createElement("tr");
+
+  const idCell = document.createElement("td");
+  const nameCell = document.createElement("td");
+  const priceCell = document.createElement("td");
+  const releaseDateCell = document.createElement("td");
+  const ratingCell = document.createElement("td");
+
+  idCell.textContent = game.id;
+  nameCell.textContent = game.name;
+  priceCell.textContent = game.price;
+  releaseDateCell.textContent = game.releaseDate;
+  ratingCell.textContent = game.rating;
+
+  tableRow.appendChild(idCell);
+  tableRow.appendChild(nameCell);
+  tableRow.appendChild(priceCell);
+  tableRow.appendChild(releaseDateCell);
+  tableRow.appendChild(ratingCell);
+  tableBody.appendChild(tableRow);
+});
+
+tableElement.appendChild(tableBody);
 
 
