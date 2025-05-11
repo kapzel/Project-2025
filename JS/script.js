@@ -138,9 +138,6 @@ function sortByPrice() {
 function sortByRating() {
 
 };
-button.addEventListener("click", () => {
-  const gameInfo = `Name: ${game.name}\nPrice: ${game.price}\nRelease Date: ${game.releaseDate}\nRating: ${game.rating}`;
-  alert(gameInfo);
-});
+
 
 
