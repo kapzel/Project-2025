@@ -23,6 +23,8 @@
     background-color: #333;
     padding: 1em;
     text-align: center;
+    position: sticky;
+    overflow: hidden;
 }
 
 .nav-menu ul {
@@ -78,4 +80,72 @@ h3 {
 
 .buttons button:hover {
     color: #66d9ef;
+}
+
+/*table element and */
+
+#gameTable {
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+}
+
+#gameTable tr {
+
+    border-bottom: 1px solid #fff;
+}
+
+#gameTable td {
+    vertical-align: middle;
+    border-right: 1px solid #fff;
+    padding: 10px;
+}
+
+/*atributes*/
+#gameAtributes {
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#gameAtributes p {
+    padding: auto;
+    display: inline;
+}
+
+#id {
+    padding-left: 10px;
+    padding-right: 25px;
+    display: inline;
+}
+
+#name {
+    padding-left: 30px;
+    padding-right: 30px;
+    display: inline;
+}
+
+#price {
+    padding-left: 60px;
+    display: inline;
+}
+
+#date {
+    padding-left: 15px;
+    display: inline;
+}
+
+#overall {
+    padding-left: 15px;
+    display: inline;
 }
