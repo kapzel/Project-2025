@@ -94,10 +94,12 @@ storeGames.forEach((game) => {
 
   const tableRow = document.createElement("tr");
 
+
   const idCell = document.createElement("td");
   const nameCell = document.createElement("td");
   const priceCell = document.createElement("td");
   const releaseDateCell = document.createElement("td");
+  const buttonCell = document.createElement("td");
   const ratingCell = document.createElement("td");
 
   idCell.textContent = game.id;
@@ -106,11 +108,17 @@ storeGames.forEach((game) => {
   releaseDateCell.textContent = game.releaseDate;
   ratingCell.textContent = game.rating;
 
+  const button = document.createElement("button");
+  button.textContent = "Buy";
+
+  buttonCell.appendChild(button);
+
   tableRow.appendChild(idCell);
   tableRow.appendChild(nameCell);
   tableRow.appendChild(priceCell);
   tableRow.appendChild(releaseDateCell);
   tableRow.appendChild(ratingCell);
+  tableRow.appendChild(buttonCell);
   tableBody.appendChild(tableRow);
 });
 
@@ -130,4 +138,9 @@ function sortByPrice() {
 function sortByRating() {
 
 };
+button.addEventListener("click", () => {
+  const gameInfo = `Name: ${game.name}\nPrice: ${game.price}\nRelease Date: ${game.releaseDate}\nRating: ${game.rating}`;
+  alert(gameInfo);
+});
+
 
