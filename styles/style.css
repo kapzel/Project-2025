@@ -89,26 +89,25 @@ h3 {
     text-align: center;
     padding: 10px;
     border: 1px solid #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
 
 }
 
 #gameTable tr {
-    text-align: center;
 
     border-bottom: 1px solid #fff;
 }
 
 #gameTable td {
-
-    text-align: center;
-
+    vertical-align: middle;
     border-right: 1px solid #fff;
     padding: 10px;
 }
 
 #gameAtributes {
     color: #fff;
-    text-align: center;
-
 }
