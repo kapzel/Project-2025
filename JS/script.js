@@ -85,7 +85,7 @@ const storeGames = [
     rating: 10,
   },
 ];
-// viewing object on html page
+//making 
 const tableElement = document.getElementById("gameTable");
 
 const tableBody = document.createElement("tbody");
@@ -94,7 +94,7 @@ storeGames.forEach((game) => {
 
   const tableRow = document.createElement("tr");
 
-
+  //creating space for object in html
   const idCell = document.createElement("td");
   const nameCell = document.createElement("td");
   const priceCell = document.createElement("td");
@@ -107,7 +107,7 @@ storeGames.forEach((game) => {
   priceCell.textContent = game.price;
   releaseDateCell.textContent = game.releaseDate;
   ratingCell.textContent = game.rating;
-
+  //adding buttons
   const button = document.createElement("button");
   button.textContent = "Buy";
 

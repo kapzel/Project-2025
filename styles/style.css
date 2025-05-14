@@ -1,9 +1,11 @@
 /*basic style settings*/
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/* Logo Styles */
 #logo {
     float: left;
     width: 80px;
@@ -11,14 +13,13 @@
     position: relative;
 }
 
+/* Title Header Styles */
 #titleHeader {
     color: #fff;
-
     float: left;
 }
 
-/* Nav styles */
-
+/* Navigation Menu Styles */
 .nav-menu {
     background-color: #333;
     padding: 1em;
@@ -36,7 +37,8 @@
 
 .nav-menu li {
     display: inline-block;
-    margin-right: 100px;
+    margin-right: 20px;
+    /* Reduced margin for better responsiveness */
 }
 
 .nav-menu a {
@@ -47,10 +49,26 @@
 
 .nav-menu a:hover {
     color: #ccc;
+    /* Added hover color for better usability */
 }
 
 .nav-menu a.active {
     color: #66d9ef;
+}
+
+@media (max-width: 768px) {
+    .nav-menu li {
+        margin-right: 10px;
+        /* Reduced margin for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-menu li {
+        display: block;
+        /* Changed to block for better mobile usability */
+        margin-right: 0;
+    }
 }
 
 /*inbody stylings*/
@@ -124,7 +142,7 @@ h3 {
 }
 
 #id {
-    padding-left: 10px;
+    padding-left: 5px;
     padding-right: 25px;
     display: inline;
 }
@@ -147,5 +165,6 @@ h3 {
 
 #overall {
     padding-left: 15px;
+    padding-right: 50px;
     display: inline;
 }
