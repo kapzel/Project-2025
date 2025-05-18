@@ -85,7 +85,7 @@ const storeGames = [
     rating: 10,
   },
 ];
-// viewing object on html page
+//making 
 const tableElement = document.getElementById("gameTable");
 
 const tableBody = document.createElement("tbody");
@@ -94,10 +94,12 @@ storeGames.forEach((game) => {
 
   const tableRow = document.createElement("tr");
 
+  //creating space for object in html
   const idCell = document.createElement("td");
   const nameCell = document.createElement("td");
   const priceCell = document.createElement("td");
   const releaseDateCell = document.createElement("td");
+  const buttonCell = document.createElement("td");
   const ratingCell = document.createElement("td");
 
   idCell.textContent = game.id;
@@ -105,12 +107,18 @@ storeGames.forEach((game) => {
   priceCell.textContent = game.price;
   releaseDateCell.textContent = game.releaseDate;
   ratingCell.textContent = game.rating;
+  //adding buttons
+  const button = document.createElement("button");
+  button.textContent = "Buy";
+
+  buttonCell.appendChild(button);
 
   tableRow.appendChild(idCell);
   tableRow.appendChild(nameCell);
   tableRow.appendChild(priceCell);
   tableRow.appendChild(releaseDateCell);
   tableRow.appendChild(ratingCell);
+  tableRow.appendChild(buttonCell);
   tableBody.appendChild(tableRow);
 });
 
@@ -118,16 +126,46 @@ tableElement.appendChild(tableBody);
 // functions for sorting
 
 function sortByName() {
-  storeGames.sort()
+  storeGames.sort((a, b) => a.name.localeCompare(b.name));
+  updateTable();
 
 };
 function sortByDate() {
+  storeGames.sort((a, b) => new Date(a.releaseDate) - new Date(b.releaseDate));
+  updateTable();
 
 };
 function sortByPrice() {
+  storeGames.sort((a, b) => a.price - b.price);
+  updateTable();
 
 };
 function sortByRating() {
+  storeGames.sort((a, b) => b.rating - a.rating);
+  updateTable();
 
 };
+function updateTable() {
+  tableBody.innerHTML = "";
+  storeGames.forEach(game => {
+
+    idCell.textContent = game.id;
+    nameCell.textContent = game.name;
+    priceCell.textContent = game.price;
+    releaseDateCell.textContent = game.releaseDate;
+    ratingCell.textContent = game.rating;
+    buttonCell.textContent = 'Button';
+
+    tableRow.appendChild(idCell);
+    tableRow.appendChild(nameCell);
+    tableRow.appendChild(priceCell);
+    tableRow.appendChild(releaseDateCell);
+    tableRow.appendChild(ratingCell);
+    tableRow.appendChild(buttonCell);
+    tableBody.appendChild(tableRow);
+
+  });
+}
+
+
 
