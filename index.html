@@ -1,39 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Game Shop</title>
-    <link rel="stylesheet" href="./styles/layout.css" />
-    <link rel="stylesheet" href="./styles/gameCards.css" />
-    <script type="module" defer src="./JS/main.js"></script>
-  </head>
 
-  <body>
-    <header>
-      <nav class="nav-menu">
-        <ul>
-          <li><a href="./index.html" class="active">Game Store</a></li>
-          <li><a href="./gameLibrary.html">My Library</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Game Shop</title>
+  <link rel="stylesheet" href="./styles/layout.css" />
+  <link rel="stylesheet" href="./styles/gameCards.css" />
+  <script type="module" defer src="./JS/main.js"></script>
+</head>
 
-    <main>
-      <div class="sort-controls">
-        <label
-          ><input type="radio" name="sort" value="name" checked /> Name</label
-        >
-        <label
-          ><input type="radio" name="sort" value="date" /> Release Date</label
-        >
-        <label><input type="radio" name="sort" value="price" /> Price</label>
-        <label><input type="radio" name="sort" value="rating" /> Rating</label>
-      </div>
+<body>
+  <header>
 
-      <section class="game-grid" id="gameGrid"></section>
-    </main>
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="./index.html" class="active">Game Store</a></li>
+        <li><a href="./gameLibrary.html">My Library</a></li>
+      </ul>
+    </nav>
+    <img class="logo" src="./assets/gamestore-logo.png">
+  </header>
 
-    <footer></footer>
-  </body>
+  <main>
+    <div class="sort-controls">
+      <label><input type="radio" name="sort" value="name" checked /> Name</label>
+      <label><input type="radio" name="sort" value="date" /> Release Date</label>
+      <label><input type="radio" name="sort" value="price" /> Price</label>
+      <label><input type="radio" name="sort" value="rating" /> Rating</label>
+    </div>
+
+    <section class="game-grid" id="gameGrid"></section>
+  </main>
+
+  <footer></footer>
+</body>
+
 </html>

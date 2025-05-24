@@ -44,3 +44,9 @@ body {
 .nav-menu a.active {
   color: #66d9ef;
 }
+
+.logo {
+  margin: 0;
+  padding: 0;
+  width: 20%;
+}
