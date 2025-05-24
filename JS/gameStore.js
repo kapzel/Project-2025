@@ -6,7 +6,7 @@ export const gameStore = [
     releaseDate: "2018",
     rating: 9,
     description: "Join Kratos and his son on a mythic Norse adventure.",
-    img: "witcher.jpg",
+    img: "god-of-war.jpg",
   },
   {
     id: 102,
@@ -24,7 +24,7 @@ export const gameStore = [
     releaseDate: "2004",
     rating: 9.2,
     description: "Stealth action classic. Espionage in the Cold War era.",
-    img: "witcher.jpg",
+    img: "mgs3.jpg",
   },
   {
     id: 104,
@@ -34,7 +34,7 @@ export const gameStore = [
     rating: 9.1,
     description:
       "Epic open world RPG filled with dragons, magic, and adventure.",
-    img: "witcher.jpg",
+    img: "The_Elder_Scrolls_V.jpg",
   },
   {
     id: 105,
@@ -43,7 +43,7 @@ export const gameStore = [
     releaseDate: "2005",
     rating: 8.4,
     description: "Classic NFS action with street racing and police chases.",
-    img: "witcher.jpg",
+    img: "Need_for_Speed_Most_Wanted.jpg",
   },
   {
     id: 106,
@@ -52,7 +52,7 @@ export const gameStore = [
     releaseDate: "2025",
     rating: 6.1,
     description: "Return to Cyrodiil in this modern remake of the classic RPG.",
-    img: "witcher.jpg",
+    img: "oblivion.jpg",
   },
   {
     id: 107,
@@ -61,7 +61,7 @@ export const gameStore = [
     releaseDate: "2023",
     rating: 8.6,
     description: "The next generation of the legendary tactical shooter.",
-    img: "witcher.jpg",
+    img: "counter-strike-2.jpg",
   },
   {
     id: 108,
@@ -70,7 +70,7 @@ export const gameStore = [
     releaseDate: "2023",
     rating: 7.5,
     description: "Survive and fight as a Jedi in a galaxy far, far away.",
-    img: "witcher.jpg",
+    img: "jedi-survivor.jpg",
   },
   {
     id: 109,
@@ -79,7 +79,7 @@ export const gameStore = [
     releaseDate: "1982",
     rating: 1,
     description: "Infamous Atari game. Notorious for its role in game history.",
-    img: "witcher.jpg",
+    img: "Etgame.jpg",
   },
   {
     id: 110,
@@ -88,7 +88,7 @@ export const gameStore = [
     releaseDate: "2010",
     rating: 9,
     description: "Epic wild west open world adventure and storytelling.",
-    img: "witcher.jpg",
+    img: "Red_Dead_Redemption.jpg",
   },
   {
     id: 111,
@@ -96,8 +96,8 @@ export const gameStore = [
     price: 70,
     releaseDate: "2012",
     rating: 9.8,
-    description: "Drive trucks and deliver cargo across beautiful Europe.",
-    img: "witcher.jpg",
+    description: "Drive trucks and deliver cargo across Europe.",
+    img: "ets2.jpg",
   },
   {
     id: 112,
@@ -106,6 +106,6 @@ export const gameStore = [
     releaseDate: "2015",
     rating: 10,
     description: "Beloved indie RPG filled with heart, humor, and choices.",
-    img: "witcher.jpg",
+    img: "undertale.jpg",
   },
 ];
