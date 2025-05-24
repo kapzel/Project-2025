@@ -1,60 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Shop</title>
+    <link rel="stylesheet" href="./styles/layout.css" />
+    <link rel="stylesheet" href="./styles/shop.css" />
+    <script type="module" defer src="./JS/main.js"></script>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game.game-shop</title>
-    <link rel="stylesheet" href="./styles/style.css">
-</head>
-
-<body>
-
+  <body>
     <header>
-        <h1 id="titleHeader">Main shop</h1>
-        <nav class="nav-menu">
-            <ul>
-                <li><a href="./index.html" class="active">Main Shop</a></li>
-                <li><a href="./gameLibrary.html">Library</a></li>
-                <li><a href="#">Yes</a></li>
-            </ul>
-        </nav>
-
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="./index.html" class="active">Game Store</a></li>
+          <li><a href="./gameLibrary.html">My Library</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
+      <div class="sort-controls">
+        <label
+          ><input type="radio" name="sort" value="name" checked /> Name</label
+        >
+        <label
+          ><input type="radio" name="sort" value="date" /> Release Date</label
+        >
+        <label><input type="radio" name="sort" value="price" /> Price</label>
+        <label><input type="radio" name="sort" value="rating" /> Rating</label>
+      </div>
 
-        <h1 id="shopGamesTitle">Games:</h1>
-
-
-        <h3>Sortuj</h3>
-        <div class="buttons">
-            <button id="button1" onclick="sortByName()">Po nazwie</button><br>
-            <button id="button2" onclick="sortByDate()">Po dacie</button><br>
-            <button id="button3" onclick="sortByPrice()">Po cenie</button><br>
-            <button id="button4" onclick="sortByRating()">Po ocenie graczy</button>
-        </div>
-        <div id="gameHeaders">
-            <p id="id">ID</p>
-            <p id="name">Nazwa</p>
-            <p id="price">Cena</p>
-            <p id="date">Data</p>
-            <p id="overall">Ocena</p>
-        </div>
-        <div id="gameTable"></div>
-
-
-
-
-        <script src="./JS/script.js"></script>
-
-
-
+      <section class="game-grid" id="gameGrid"></section>
     </main>
-    <footer>
 
-    </footer>
-
-</body>
-
+    <footer></footer>
+  </body>
 </html>

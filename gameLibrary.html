@@ -1,37 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Shop | Library</title>
+    <link rel="stylesheet" href="./styles/layout.css" />
+    <script type="module" defer src="./JS/userLibrary.js"></script>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src=""></script>
-    <link rel="stylesheet" href="./styles/style2.css">
-</head>
-
-<body>
-
+  <body>
     <header>
-        <nav class="nav-menu">
-            <ul>
-                <li><a href="./index.html">Main Shop</a></li>
-                <li><a href="./gameLibrary.html" class="actived"></a>Library</a></li>
-                <li><a href="#">Yes</a></li>
-            </ul>
-        </nav>
-
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="./index.html">Game Store</a></li>
+          <li><a href="./gameLibrary.html" class="active">My Library</a></li>
+        </ul>
+      </nav>
     </header>
+
     <main>
-        <h2>Your games:</h2>
-        <div id="yourGames"></div>
-
-        <script src="./JS/libscript.js"></script>
-
+      <h2>Your Games</h2>
+      <div id="userLibrary"></div>
     </main>
-    <footer>
-
-    </footer>
-
-</body>
-
+    <footer></footer>
+  </body>
 </html>
