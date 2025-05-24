@@ -1,0 +1,1 @@
+export const BOUGHT_GAMES_KEY = "boughtGames";
