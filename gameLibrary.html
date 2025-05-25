@@ -2,36 +2,35 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src=""></script>
-    <link rel="stylesheet" href="./styles/style2.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Shop | Library</title>
+    <link rel="stylesheet" href="./styles/layout.css" />
+    <link rel="stylesheet" href="./styles/gameCards.css" />
+    <link rel="stylesheet" href="./styles/library.css" />
+    <script type="module" defer src="./JS/userLibrary.js"></script>
 </head>
 
 <body>
-
     <header>
         <nav class="nav-menu">
             <ul>
-                <li><a href="./index.html">Main Shop</a></li>
-                <li><a href="./gameLibrary.html" class="actived"></a>Library</a></li>
-                <li><a href="#">Yes</a></li>
+                <li><a href="./index.html">Game Store</a></li>
+                <li><a href="./gameLibrary.html" class="active">My Library</a></li>
             </ul>
         </nav>
-
     </header>
-    <main>
-        <h2>Your games:</h2>
-        <div id="yourGames"></div>
+    <img class="logo" src="./assets/gamestore-logo.png">
 
-        <script src="./JS/libscript.js"></script>
+    <header class="main-header">
+        <h1>Your Game Library</h1>
+    </header>
 
-    </main>
-    <footer>
+    <div class="game-library-content">
+        <div class="game-grid" id="libraryGrid"></div>
+    </div>
 
-    </footer>
-
+    <footer></footer>
 </body>
 
 </html>

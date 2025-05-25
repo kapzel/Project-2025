@@ -1,0 +1,131 @@
+.game-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 28px;
+    padding: 32px 12px;
+    max-width: 1220px;
+    margin: auto;
+}
+
+.game-card {
+    background: #3a1857;
+    border-radius: 18px;
+    box-shadow: 0 4px 20px #00000025;
+    overflow: hidden;
+    padding: 24px 24px 16px 24px;
+    margin: 0;
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    transition: transform 0.18s cubic-bezier(0.2, 0.89, 0.44, 1.21),
+        box-shadow 0.18s;
+    position: relative;
+}
+
+.game-card:hover {
+    transform: translateY(-7px) scale(1.03);
+    box-shadow: 0 8px 24px #00000056;
+}
+
+.game-card--picture {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    margin-bottom: 15px;
+    background: #301745;
+}
+
+.game-card--details {
+    display: flex;
+    flex-direction: column;
+    padding: 0 18px 5px 18px;
+}
+
+.game-card--release-day {
+    font-size: 10px;
+    color: #8ffbea;
+}
+
+.game-card--rating {
+    font-size: 10px;
+    color: #b965fd;
+
+}
+
+.game-card--details>p {
+    color: #e7d9f7;
+    font-size: 11px;
+    flex-grow: 1;
+}
+
+.game-card--name {
+    font-family: Tahoma, "Trebuchet MS", sans-serif;
+    font-size: 1.22em;
+    color: #ffe86b;
+    font-weight: bold;
+    margin-top: 24px;
+}
+
+.game-card-price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.game-card--price {
+    font-size: 1.09em;
+    font-weight: 700;
+    color: #ffe86b;
+    background: #563dae33;
+    padding: 6px 14px;
+    border-radius: 8px;
+}
+
+.buy-btn {
+    background: linear-gradient(90deg, #b965fd 0%, #42e7ee 100%);
+    color: #fff;
+    font-weight: bold;
+    padding: 7px 20px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #71f7ff20;
+    cursor: pointer;
+    transition: background 0.16s, box-shadow 0.15s;
+}
+
+.buy-btn:hover {
+    background: linear-gradient(90deg, #42e7ee 0%, #b965fd 100%);
+    box-shadow: 0 4px 14px #ffdaff80;
+}
+
+.sort-controls {
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+    margin-bottom: 0;
+}
+
+.sort-controls label {
+    color: #ffe86b;
+    font-weight: 600;
+    font-size: 1.05em;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: color 0.13s;
+}
+
+.sort-controls input[type="radio"] {
+    accent-color: #b965fd;
+    margin-right: 5px;
+}
+
+.sort-controls input[type="radio"]:focus+label {
+    outline: 1px solid #42e7ee;
+}

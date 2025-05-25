@@ -1,0 +1,31 @@
+@media (max-width: 768px) {
+    .nav-menu li {
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-menu li {
+        margin-right: 0;
+    }
+}
+
+.empty {
+    color: #ffe86b;
+    font-size: 1.3em;
+    margin: 50px auto;
+}
+
+.logo {
+    margin: 0;
+    padding: 0;
+    width: 20%;
+}
+
+.game-card--name {
+    font-family: Tahoma, "Trebuchet MS", sans-serif;
+    font-size: 1.22em;
+    color: #ffe86b;
+    font-weight: bold;
+    margin-top: 24px;
+}
