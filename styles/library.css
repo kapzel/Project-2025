@@ -1,0 +1,26 @@
+@media (max-width: 768px) {
+    .nav-menu li {
+        margin-right: 10px;
+        /* Reduced margin for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-menu li {
+        display: block;
+        /* Changed to block for better mobile usability */
+        margin-right: 0;
+    }
+}
+
+.empty {
+    color: #ffe86b;
+    font-size: 1.3em;
+    margin: 50px auto;
+}
+
+.logo {
+    margin: 0;
+    padding: 0;
+    width: 20%;
+}
