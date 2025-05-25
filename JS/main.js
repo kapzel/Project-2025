@@ -14,6 +14,7 @@ function renderGames(games) {
       <div class="game-card--details">
       <div class="game-card--release-day ">Release day: ${game.releaseDate
         }</div>
+        <div class="game-card--rating">Rating: ${game.rating}</div>
       <div class="game-card--name">${game.name}</div>
       <p>${game.description}</p>
       <div class="game-card-price-row">

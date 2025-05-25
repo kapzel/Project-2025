@@ -50,6 +50,11 @@
     color: #8ffbea;
 }
 
+.game-card--rating {
+    font-size: 15px;
+    color: #b965fd;
+}
+
 .game-card--details>p {
     color: #e7d9f7;
     font-size: 11px;
