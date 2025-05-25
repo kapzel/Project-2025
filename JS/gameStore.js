@@ -78,7 +78,7 @@ export const gameStore = [
         price: 40,
         releaseDate: "1982",
         rating: 1,
-        description: "Infamous Atari game. Notorious for its role in game history.",
+        description: "Infamous Atari game. so bad that is bad",
         img: "Etgame.jpg",
     },
     {

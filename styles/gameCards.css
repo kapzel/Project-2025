@@ -51,8 +51,9 @@
 }
 
 .game-card--rating {
-    font-size: 15px;
+    font-size: 10px;
     color: #b965fd;
+
 }
 
 .game-card--details>p {
