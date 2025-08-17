@@ -2,7 +2,7 @@ import { gameStore } from "./gameStore.js";
 import { isBought, getBoughtGames, setBoughtGames } from "./utils.js";
 
 function renderLibrary() {
-  // Filter user's bought games
+
   const boughtIDs = getBoughtGames();
   const myGames = gameStore.filter(function (game) { return boughtIDs.includes(game.id) });
 

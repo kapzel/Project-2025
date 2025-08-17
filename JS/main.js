@@ -42,23 +42,21 @@ function sortGames(games, sortBy) {
       return a.name.localeCompare(b.name);
     }
     if (sortBy === "date") {
-      return b.releaseDate.localeCompare(a.releaseDate); // Newest first
+      return b.releaseDate.localeCompare(a.releaseDate);
     }
     if (sortBy === "price") {
-      return a.price - b.price; // Low to high
+      return a.price - b.price;
     }
     if (sortBy === "rating") {
-      return b.rating - a.rating; // High to low
+      return b.rating - a.rating;
     }
     return 0;
   });
 }
 
-// Initial render
 let currentSort = "name";
 renderGames(sortGames(gameStore, currentSort));
 
-// Listen for sort change
 document.querySelectorAll('input[name="sort"]').forEach(function (radio) {
   radio.addEventListener("change", function () {
     currentSort = this.value;
@@ -66,7 +64,7 @@ document.querySelectorAll('input[name="sort"]').forEach(function (radio) {
   });
 });
 
-// Add click listeners for Buy buttons
+
 document.querySelectorAll(".buy-btn:not([disabled])").forEach(function (btn) {
   btn.addEventListener("click", function (e) {
     const gameId = Number(e.currentTarget.getAttribute("data-id"));
@@ -75,7 +73,7 @@ document.querySelectorAll(".buy-btn:not([disabled])").forEach(function (btn) {
     if (!boughtGames.includes(gameId)) {
       boughtGames.push(gameId);
       setBoughtGames(boughtGames);
-      renderGames(sortGames(gameStore, currentSort)); // rerender to update buttons
+      renderGames(sortGames(gameStore, currentSort)); \
     }
   });
 });
